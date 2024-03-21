@@ -249,10 +249,10 @@ const engineerDetails = (employeeArray, questions) => {
         .prompt(
             questions
         ).then(
-            answers => {
+            engineerAnswers => {
                 //console.log(answers);
-                engineer = new Engineer(answers.name,
-                    answers.id, answers.email, answers.github);
+                engineer = new Engineer(engineerAnswers.name,
+                    engineerAnswers.id, engineerAnswers.email, engineerAnswers.github);
 
                     employeeArray.push(manager);
                   //  writeToFile("team.html", render(EmployeeArray[1]));
@@ -265,10 +265,10 @@ const internDetails = (employeeArray, questions) => {
         .prompt(
             questions
         ).then(
-            answers => {
+            internAnswers => {
                 //console.log(answers);
-                intern = new Intern(answers.name,
-                    answers.id, answers.email, answers.school);
+                intern = new Intern(internAnswers.name,
+                    internAnswers.id, internAnswers.email, internAnswers.school);
                 
                 employeeArray.push(intern);
                   //  writeToFile("team.html", render(EmployeeArray[2]));
@@ -362,3 +362,4 @@ console.log(EmployeeArray);
 
 // function call to initialize program
 init();
+
