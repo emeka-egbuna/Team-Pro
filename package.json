@@ -1,0 +1,30 @@
+{
+  "name": "team-pro",
+  "version": "1.0.0",
+  "description": "a user want to generate a webpage that displays my team's basic info so that a user have quick access to their emails and GitHub profiles.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emeka-egbuna"
+  },
+  "keywords": [
+    "test",
+    "npm",
+    "javascript",
+    "web"
+  ],
+  "author": "emeka",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
